@@ -1,9 +1,18 @@
 {
-  "name": "lib-potree",
+  "name": "potree",
   "version": "0.0.0",
-  "main": ["src/Potree.js"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ciscprocess/potree.git"
-  }
+  "homepage": "https://github.com/ciscprocess/potree",
+  "authors": [
+    "Nathan Korzekwa <ciscprocess@gmail.com>"
+  ],
+  "description": "Point cloud visualization fork",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
