@@ -47,7 +47,7 @@ Potree.includes = [
 	"src/objects/Mesh.js",
 	"src/navigation/CamHandler.js",
 	"src/navigation/FreeFlightCamHandler.js",
-	"src/navigation/OrbitCamHandler.js",
+	"src/navigation/FPSCamHandler.js",
 	"src/Framebuffer.js",
 	"src/FramebufferFloat32.js",
 	"src/ResourceManager/ShaderManager.js",
@@ -68,7 +68,7 @@ Potree.includes = [
 	"src/loader/POCLoader.js",
 	"src/loader/PointAttributes.js",
 	"src/loader/PlyLoader.js",
-	"src/utils/LRU.js",
+	"src/utils/LRU.js"
                   ];
 
 Potree.Settings = {};
@@ -183,7 +183,7 @@ Potree.init = function(canvas) {
 	
 	
 	{// install cam handler
-		Potree.camHandler = new FreeFlightCamHandler(Potree.currentScene.activeCamera);
+		Potree.camHandler = new FPSCamHandler(Potree.currentScene.activeCamera);
 		MouseListener.addListener(Potree.camHandler);
 		canvas.onfocus = function(){
 			KeyListener.addListener(Potree.camHandler);
