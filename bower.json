@@ -1,0 +1,9 @@
+{
+  "name": "lib-potree",
+  "version": "0.0.0",
+  "main": ["src/Potree.js"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ciscprocess/potree.git"
+  }
+}
