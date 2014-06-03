@@ -181,9 +181,9 @@ Potree.init = function(canvas) {
 		document.onkeydown = KeyListener.keyDown;
 		document.onkeyup = KeyListener.keyUp;
 		document.onkeypress = KeyListener.keyPress;
-		document.onmousedown = MouseListener.mouseDown;
-		document.onmouseup = MouseListener.mouseUp;
-		document.onmousemove = MouseListener.mouseMove;
+		canvas.onmousedown = MouseListener.mouseDown;
+		canvas.onmouseup = MouseListener.mouseUp;
+		canvas.onmousemove = MouseListener.mouseMove;
 	}
 	
 	
