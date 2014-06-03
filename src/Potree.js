@@ -138,10 +138,15 @@ Potree.isWebGLEnabled = function(canvas){
  * @returns
  */
 Potree.init = function(canvas) {
-	if(Potree.initialized){
-		console.log("Potree has already been initialized");
-		return true;
-	}
+	//if(Potree.initialized){
+	//	console.log("Potree has already been initialized");
+	//	return true;
+	//}
+	
+	ShaderManager.vertexShader = new Object();
+	ShaderManager.fragmentShader = new Object();
+	ShaderManager.shader = new Array();
+	gl = null;
 	
 	Potree.canvas = canvas;
 	Potree.currentScene = new Scene("default");

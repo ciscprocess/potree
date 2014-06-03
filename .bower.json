@@ -1,0 +1,26 @@
+{
+  "name": "potree",
+  "homepage": "https://github.com/ciscprocess/potree",
+  "authors": [
+    "Nathan Korzekwa <ciscprocess@gmail.com>"
+  ],
+  "description": "Point cloud visualization fork",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0812fb9776",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0812fb9776ed2afe0269a4699e9f6fef7f817a40"
+  },
+  "_source": "https://github.com/ciscprocess/potree.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/ciscprocess/potree.git"
+}
